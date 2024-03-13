@@ -1,0 +1,160 @@
+# 1. Compra de Articulos
+
+compra = int(input("Cuantos Articulos Compro"))
+if compra <= 3:
+     print("Debes de realizar el pago en efectivo")
+else:
+ print("Debes de realizar el pago en tarjeta")
+
+ #2. Leer 3 tres valores
+
+ Num1 = int(input("Digite el Num1"))
+ Num2 = int(input("Digite el Num2"))
+ Num3 = int(input("Digite el Num3"))
+
+ if (Num1 > Num2) or (Num1 > Num3):
+     print(f"El numero {Num1} es mayor")
+ elif (Num1 > Num2) or (Num2 > Num3):
+     print(f"El numero {Num2} es mayor")
+ else:
+     print(f"El numero {Num3} es mayor")
+
+ #3. ingresar numeros mostrar el menor y la suma de
+
+Num1 = int(input("Digite el Num1"))
+Num2 = int(input("Digite el Num2"))
+Num3 = int(input("Digite el Num3"))
+
+if (Num1 < Num2) or (Num1 < Num3):
+    print(f"El numero {Num1} es Menor")
+elif (Num1 < Num2) or (Num2 < Num3):
+    print(f"El numero {Num2} es Menor")
+else:
+    print(f"El numero {Num3} es Menor")
+    suma = (Num1 + Num2 + Num3)
+    print("La suma de los tres numeros es; " + str(Num1 + Num2 + Num3))
+
+#4 horas extras laboradas
+
+horas_trabajadas = int(input("Ingrese la cantidad de horas trabajadas: "))
+tarifa_por_hora = float(input("Ingrese la tarifa por hora: "))
+
+if horas_trabajadas <= 40:
+    salario = horas_trabajadas * tarifa_por_hora
+else:
+    salario = (40 * tarifa_por_hora) + ((horas_trabajadas - 40) * 1.5 * tarifa_por_hora)
+
+print("El salario del trabajador es:", salario)
+
+# 5 calcular compra camisas
+
+compra = int(input("Cuantas camisas compro: "))
+valor = float(input("costo de las camisas: "))
+if compra >= 3:
+    descuento = valor * 0.20
+    print("tienes el 20 % de descuento")
+else:
+    descuento = valor * 0.10
+    print("tienes el 10 % de descuento")
+
+costo = compra * valor
+costo_descuento = costo - descuento
+print("El costo total es: ", costo_descuento)
+
+#6 Descuento del sueldo
+
+sueldo = int(input("Digite cual es su sueldo: "))
+
+if sueldo <= 1000:
+    descuento = sueldo - 0.10
+    print("Su descuento es del 10%")
+elif sueldo <= 2000:
+    descuento = sueldo - 0.15
+    print("Su descuento es del 15%")
+elif sueldo >= 3000:
+    descuento = sueldo - 0.18
+    print("Su descuento es del 18 %")
+
+
+nomina = sueldo - descuento / 100
+print("Su nomina es de: ", (nomina))
+
+#7Determinar si un alumno aprueba
+
+nota1 = float(input("Ingrese la nota 1: "))
+nota2 = float(input("Ingrese la nota 2: "))
+nota3 = float(input("Ingrese la nota 3: "))
+nota4 = float(input("Ingrese la nota 4:"))
+nota5 = float(input("Ingrese la nota 5"))
+nota_total = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
+print("Su materia le quedo en : ", nota_total)
+if nota_total <= 5:
+    print("has reprobado la materi")
+else:
+    print("has aprovado la materi")
+
+#8 Distribuidora de motocicletas
+
+honda = 1
+yamaha = 2
+suzuki = 3
+otras = 4
+marca = int(input("Ingrese la marca de la moto: 1 = Honda, 2 = Yamaha, 3 = Suzuki, Otra Marca = 4"))
+precio = float(input("Digite el precio de la moto:"))
+print("La moto", marca, "tiene un costo de:", precio)
+
+if marca == 1:
+    descuento =  precio - 0.55
+    print("El descuento es del 5 %")
+
+elif marca == 2:
+    descuento = precio - 0.8
+    print("El descuento es del 8 %")
+
+elif marca == 3:
+    descuento = precio - 0.10
+    print("El descuento es del 10 %")
+
+else:
+    descuento = precio - 0.2
+    print("El descuento es del 2 %")
+
+valor = precio
+costo_total = valor - descuento / 100
+
+print("la moto", marca, "tiene un valor de: ", costo_total)
+
+#9 valor numerico indicar si es o no par
+
+numero = float(input("Ingrese un numero"))
+if numero % 2 == 0:
+    print("El numero es par")
+else:
+    print("El numero es impar")
+
+#10 descuento para moto por dias
+
+martes = 12000
+sabado = 18000
+feriado = 25000
+
+dia = int(input("Dia de la semana que realizara la compra: Martes = 12, Sabado = 18, Feriado = 25"))
+precio = float(input("digite el precio de la moto"))
+
+if dia == martes:
+    descuento = precio - 0.12
+    print("El descuento del martes es de 12%")
+
+elif dia == sabado:
+    descuento = precio - 0.18
+    print("El descuento  del sabado es del 18%")
+
+else:
+    descuento = precio - 0.25
+    print("El descuento de feriado es del 25%")
+    print("El costo de la moto es: ", descuento)
+
+
+
+
+
