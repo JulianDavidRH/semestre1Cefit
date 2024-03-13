@@ -1,0 +1,44 @@
+#Taller 1 ejercicios
+#1. Hola Mundo
+print("Hola Mundo")
+
+#2. Suma de Numeros
+Num1 = int(input("Digite un numero"))
+Num2 = int(input("Digite otro numero"))
+Num3 = int(input("Digite otro numero"))
+print(f"La suma de los numeros es :", (Num1 + Num2 + Num3))
+
+#3. Calcular la edad
+nacimiento = int(input("Ingrese su año de nacimiento:"))
+actual = 2024
+edad = nacimiento - actual
+print("Su edad es ", edad, "Años")
+
+#4. Indice de masa corporal:
+#Este ejercicio ya se evidencio en entregas pasadas.
+
+#5 Hallar el numero par e impar de un numero
+numero = int(input("Digite un numero"))
+if numero % 2 == 0:
+    print("El numero es par")
+else:
+    print("El numero es impar")
+
+#6 hallar el area de un cuadrado
+lado = int(input("Ingrese la medida del lado del cuadrado: "))
+area = lado * lado
+print("El area del cuadrado es: " + str(area))
+
+#7 hallar el area de un triangulo
+base = int(input("Digite base del triangulo:"))
+altura = int(input("Digite altura del triangulo:"))
+area = (base * altura) / 2
+print(f"El area del triangulo es: {area} cm²")
+
+#8 validar si es mayor o menor de edad
+edad = int(input("Digite su edad:"))
+if edad <= 18:
+    print("Usted es menor de edad")
+else:
+    print("Usted es mayor de edad")
+
